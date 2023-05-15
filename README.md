@@ -4,7 +4,7 @@ Olá pessoal! Este repositório foi criado com o intuito de auxiliar os estudant
 
 ## Dicas de boas práticas de programação:
 
-➡️ Idente seu código, de forma que todo bloco de código seja identificado facilmente: 
+➡️ Indente seu código, de forma que todo bloco de código seja identificado facilmente: 
 ```
 int main() {
     |
