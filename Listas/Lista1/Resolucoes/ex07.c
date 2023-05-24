@@ -1,23 +1,22 @@
-#include <math.h>
 #include <stdio.h>
+#include <math.h>
 
-int main() {
+int main () {
+    int numero, raiz1, raiz2;
 
-  int numero, aprox;
-  float raiz;
+    printf("Digite o numero que deseja saber a raiz quadrada: ");
+    scanf("%d", &numero);
 
-  printf("Digite um número: ");
-  scanf("%d", &numero);
+    /* ========== UTILIZANDO A SQRT DA MATH.H ========== */
+    raiz1 = sqrt(numero);
 
-  raiz = sqrt(numero);
+    /* ========== UTILIZANDO LAÇO DE REPETIÇÃO ========== */
+    for(int i = 0; i*i <= numero; i++) {
+        raiz2 = i;
+    }
 
-  if ((raiz - (int)raiz) >= 0.5)
-    aprox = (int)raiz + 1;
-  else
-    aprox = (int)raiz;
-
-  printf("A raiz do número %d é %.3f e o inteiro que mais se aproxima é: %d",
-         numero, sqrt(numero), aprox);
-
-  return 0;
+    printf("raiz quadrada 1: %d\n", raiz1);
+    printf("raiz quadrada 2: %d\n", raiz2);
+    
+    return 0;
 }
